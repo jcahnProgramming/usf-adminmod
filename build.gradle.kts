@@ -1,6 +1,5 @@
 plugins {
-    java
-    id("net.neoforged.gradle.userdev") version "7.0.112"
+    id("java")
 }
 
 group = "com.meownet.usf"
@@ -18,22 +17,21 @@ repositories {
 }
 
 dependencies {
-    // Update to match YOUR NeoForge exactly (check your pack’s latest.log for the neoforge line)
-    implementation("net.neoforged:neoforge:1.21.1-21.1.65")
+    // Compile against NeoForge API — don't bundle it
+    compileOnly("net.neoforged:neoforge:21.1.213")
 
-    // Only compile against KubeJS APIs; don’t bundle it
+    // Optional compile-time helpers
     compileOnly("dev.latvian.mods:kubejs:2101.7.2-build.295")
-
     compileOnly("org.jetbrains:annotations:24.1.0")
 }
 
 tasks.processResources {
-    filesMatching("META-INF/mods.toml") {
-        expand(
-            mapOf(
-                "mod_version" to project.version,
-                "loader_version" to ">=4.0.0"
-            )
-        )
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    filesMatching(listOf("META-INF/mods.toml", "META-INF/neoforge.mods.toml")) {
+        expand(mapOf("mod_version" to project.version, "loader_version" to ">=4.0.0"))
     }
+}
+
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
 }

@@ -1,0 +1,763 @@
+﻿Initialized native services in: C:\Users\jamie\.gradle\native
+Initialized jansi services in: C:\Users\jamie\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Microsoft\jdk-21.0.8.9-hotspot': {JAVA_HOME=C:\Program Files\Microsoft\jdk-21.0.8.9-hotspot, JAVA_VERSION=21.0.8, JAVA_VENDOR=Microsoft, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.8+9-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.8+9-LTS, VM_VENDOR=Microsoft, OS_ARCH=amd64}
+Found daemon DaemonInfo{pid=16056, address=[fb739e85-22b0-4e29-9c17-97399d213167 port:50109, addresses:[/127.0.0.1]], state=Idle, lastBusy=1761592487559, context=DefaultDaemonContext[uid=40d999a2-fa50-4446-8ac5-5f5a7cd8ae1a,javaHome=C:\Program Files\BellSoft\LibericaJRE-8-Full,javaVersion=8,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=16056,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=windows-1252,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{requestedJvm=21.0.8 (Microsoft 21.0.8+9-LTS), jvmCriteria=null, daemonOpts=[--add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=40d999a2-fa50-4446-8ac5-5f5a7cd8ae1a,javaHome=C:\Program Files\BellSoft\LibericaJRE-8-Full,javaVersion=8,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=16056,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=windows-1252,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=40980, address=[ac1184bb-37d4-4ccc-9c44-e60cf6d316fa port:63980, addresses:[/127.0.0.1]], state=Idle, lastBusy=1761597468531, context=DefaultDaemonContext[uid=cfc6941c-6589-4781-84c7-677b0d89b89b,javaHome=C:\Users\jamie\.vscode\extensions\redhat.java-1.46.0-win32-x64\jre\21.0.8-win32-x86_64,javaVersion=21,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=40980,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{requestedJvm=21.0.8 (Microsoft 21.0.8+9-LTS), jvmCriteria=null, daemonOpts=[--add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=cfc6941c-6589-4781-84c7-677b0d89b89b,javaHome=C:\Users\jamie\.vscode\extensions\redhat.java-1.46.0-win32-x64\jre\21.0.8-win32-x86_64,javaVersion=21,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=40980,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=39164, address=[cdf8776b-f0bf-4cfd-bafd-0af5622e722f port:64003, addresses:[/127.0.0.1]], state=Idle, lastBusy=1761597240738, context=DefaultDaemonContext[uid=9a64b4b1-dc77-4032-ae0e-99b12b5c6572,javaHome=C:\Users\jamie\.vscode\extensions\redhat.java-1.46.0-win32-x64\jre\21.0.8-win32-x86_64,javaVersion=21,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=39164,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{requestedJvm=21.0.8 (Microsoft 21.0.8+9-LTS), jvmCriteria=null, daemonOpts=[--add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=9a64b4b1-dc77-4032-ae0e-99b12b5c6572,javaHome=C:\Users\jamie\.vscode\extensions\redhat.java-1.46.0-win32-x64\jre\21.0.8-win32-x86_64,javaVersion=21,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=39164,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=30360, address=[bbd675dc-abd9-473a-a05c-76812952432f port:60093, addresses:[/127.0.0.1]], state=Idle, lastBusy=1761597558320, context=DefaultDaemonContext[uid=4533af3c-79a1-4df6-933a-1eed5eb2b5d1,javaHome=C:\Program Files\Microsoft\jdk-21.0.8.9-hotspot,javaVersion=21,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=30360,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=utf8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+At least one daemon option is different.
+Wanted: DaemonRequestContext{requestedJvm=21.0.8 (Microsoft 21.0.8+9-LTS), jvmCriteria=null, daemonOpts=[--add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=4533af3c-79a1-4df6-933a-1eed5eb2b5d1,javaHome=C:\Program Files\Microsoft\jdk-21.0.8.9-hotspot,javaVersion=21,daemonRegistryDir=C:\Users\jamie\.gradle\daemon,pid=30360,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=utf8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 30076). The daemon log file: C:\Users\jamie\.gradle\daemon\8.8\daemon-30076.out.log
+Starting 3rd build in daemon [uptime: 54.979 secs, performance: 100%, GC rate: 0.00/s, heap usage: 4% of 512 MiB, non-heap usage: 29% of 384 MiB]
+Using 16 worker leases.
+Now considering [C:\Users\jamie\OneDrive\Documents\Minecraft Custom Mods\usf-adminmod] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\jamie\OneDrive\Documents\Minecraft Custom Mods\usf-adminmod\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\jamie\OneDrive\Documents\Minecraft Custom Mods\usf-adminmod\build.gradle.kts'.
+Included projects: [root project 'usf-adminmod']
+
+> Configure project :
+Evaluating root project 'usf-adminmod' using build file 'C:\Users\jamie\OneDrive\Documents\Minecraft Custom Mods\usf-adminmod\build.gradle.kts'.
+Transforming userdev-7.0.126.jar (net.neoforged.gradle:userdev:7.0.126) with InstrumentationAnalysisTransform
+Transforming neoform-7.0.126.jar (net.neoforged.gradle:neoform:7.0.126) with InstrumentationAnalysisTransform
+Transforming common-7.0.126.jar (net.neoforged.gradle:common:7.0.126) with InstrumentationAnalysisTransform
+Transforming dsl-userdev-7.0.126.jar (net.neoforged.gradle:dsl-userdev:7.0.126) with InstrumentationAnalysisTransform
+Transforming dsl-neoform-7.0.126.jar (net.neoforged.gradle:dsl-neoform:7.0.126) with InstrumentationAnalysisTransform
+Transforming utils-7.0.126.jar (net.neoforged.gradle:utils:7.0.126) with InstrumentationAnalysisTransform
+Transforming dsl-common-7.0.126.jar (net.neoforged.gradle:dsl-common:7.0.126) with InstrumentationAnalysisTransform
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with InstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15-base.jar (net.neoforged:groovydslimprover:1.0.15) with InstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15-runtime.jar (net.neoforged:groovydslimprover:1.0.15) with InstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15.jar (net.neoforged:groovydslimprover:1.0.15) with InstrumentationAnalysisTransform
+Transforming commons-io-2.11.0.jar (commons-io:commons-io:2.11.0) with InstrumentationAnalysisTransform
+Transforming JarJarSelector-0.4.1.jar (net.neoforged:JarJarSelector:0.4.1) with InstrumentationAnalysisTransform
+Transforming JarJarMetadata-0.4.1.jar (net.neoforged:JarJarMetadata:0.4.1) with InstrumentationAnalysisTransform
+Transforming gradle-idea-ext-1.1.6.jar (gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:1.1.6) with InstrumentationAnalysisTransform
+Transforming gson-2.9.0.jar (com.google.code.gson:gson:2.9.0) with InstrumentationAnalysisTransform
+Transforming guava-31.1-jre.jar (com.google.guava:guava:31.1-jre) with InstrumentationAnalysisTransform
+Transforming fastcsv-2.2.0.jar (de.siegmar:fastcsv:2.2.0) with InstrumentationAnalysisTransform
+Transforming unsafe-0.2.0.jar (net.minecraftforge:unsafe:0.2.0) with InstrumentationAnalysisTransform
+Transforming maven-artifact-3.8.5.jar (org.apache.maven:maven-artifact:3.8.5) with InstrumentationAnalysisTransform
+Transforming ivy-2.5.1.jar (org.apache.ivy:ivy:2.5.1) with InstrumentationAnalysisTransform
+Transforming httpclient-4.5.13.jar (org.apache.httpcomponents:httpclient:4.5.13) with InstrumentationAnalysisTransform
+Transforming srgutils-0.4.13.jar (net.minecraftforge:srgutils:0.4.13) with InstrumentationAnalysisTransform
+Transforming DiffPatch-1.5.0.29.jar (codechicken:DiffPatch:1.5.0.29) with InstrumentationAnalysisTransform
+Transforming commons-codec-1.15.jar (commons-codec:commons-codec:1.15) with InstrumentationAnalysisTransform
+Transforming EclipseLaunchConfigs-0.1.3.jar (net.neoforged:EclipseLaunchConfigs:0.1.3) with InstrumentationAnalysisTransform
+Transforming failureaccess-1.0.1.jar (com.google.guava:failureaccess:1.0.1) with InstrumentationAnalysisTransform
+Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava) with InstrumentationAnalysisTransform
+Transforming jsr305-3.0.2.jar (com.google.code.findbugs:jsr305:3.0.2) with InstrumentationAnalysisTransform
+Transforming checker-qual-3.12.0.jar (org.checkerframework:checker-qual:3.12.0) with InstrumentationAnalysisTransform
+Transforming error_prone_annotations-2.11.0.jar (com.google.errorprone:error_prone_annotations:2.11.0) with InstrumentationAnalysisTransform
+Transforming j2objc-annotations-1.3.jar (com.google.j2objc:j2objc-annotations:1.3) with InstrumentationAnalysisTransform
+Transforming plexus-utils-3.3.0.jar (org.codehaus.plexus:plexus-utils:3.3.0) with InstrumentationAnalysisTransform
+Transforming commons-lang3-3.9.jar (org.apache.commons:commons-lang3:3.9) with InstrumentationAnalysisTransform
+Transforming httpcore-4.4.13.jar (org.apache.httpcomponents:httpcore:4.4.13) with InstrumentationAnalysisTransform
+Transforming commons-logging-1.2.jar (commons-logging:commons-logging:1.2) with InstrumentationAnalysisTransform
+Transforming Quack-0.4.7.72.jar (net.covers1624:Quack:0.4.7.72) with InstrumentationAnalysisTransform
+Transforming fastutil-8.3.1.jar (it.unimi.dsi:fastutil:8.3.1) with InstrumentationAnalysisTransform
+Transforming commons-compress-1.18.jar (org.apache.commons:commons-compress:1.18) with InstrumentationAnalysisTransform
+Transforming xz-1.8.jar (org.tukaani:xz:1.8) with InstrumentationAnalysisTransform
+Transforming jopt-simple-5.0.4.jar (net.sf.jopt-simple:jopt-simple:5.0.4) with InstrumentationAnalysisTransform
+Transforming jackson-databind-2.15.2.jar (com.fasterxml.jackson.core:jackson-databind:2.15.2) with InstrumentationAnalysisTransform
+Transforming jackson-core-2.15.2.jar (com.fasterxml.jackson.core:jackson-core:2.15.2) with InstrumentationAnalysisTransform
+Transforming jackson-annotations-2.15.2.jar (com.fasterxml.jackson.core:jackson-annotations:2.15.2) with InstrumentationAnalysisTransform
+Transforming jackson-dataformat-xml-2.15.2.jar (com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2) with InstrumentationAnalysisTransform
+Transforming noexception-1.7.1.jar (com.machinezoo.noexception:noexception:1.7.1) with InstrumentationAnalysisTransform
+Transforming groovy-testng-3.0.17.jar (org.codehaus.groovy:groovy-testng:3.0.17) with InstrumentationAnalysisTransform
+Transforming testng-7.5.jar (org.testng:testng:7.5) with InstrumentationAnalysisTransform
+Transforming slf4j-api-1.7.32.jar (org.slf4j:slf4j-api:1.7.32) with InstrumentationAnalysisTransform
+Transforming groovy-ant-3.0.17.jar (org.codehaus.groovy:groovy-ant:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-astbuilder-3.0.17.jar (org.codehaus.groovy:groovy-astbuilder:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-cli-picocli-3.0.17.jar (org.codehaus.groovy:groovy-cli-picocli:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-groovysh-3.0.17.jar (org.codehaus.groovy:groovy-groovysh:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-console-3.0.17.jar (org.codehaus.groovy:groovy-console:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-datetime-3.0.17.jar (org.codehaus.groovy:groovy-datetime:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-groovydoc-3.0.17.jar (org.codehaus.groovy:groovy-groovydoc:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-docgenerator-3.0.17.jar (org.codehaus.groovy:groovy-docgenerator:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-jmx-3.0.17.jar (org.codehaus.groovy:groovy-jmx:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-json-3.0.17.jar (org.codehaus.groovy:groovy-json:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-jsr223-3.0.17.jar (org.codehaus.groovy:groovy-jsr223:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-macro-3.0.17.jar (org.codehaus.groovy:groovy-macro:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-nio-3.0.17.jar (org.codehaus.groovy:groovy-nio:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-servlet-3.0.17.jar (org.codehaus.groovy:groovy-servlet:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-sql-3.0.17.jar (org.codehaus.groovy:groovy-sql:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-swing-3.0.17.jar (org.codehaus.groovy:groovy-swing:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-templates-3.0.17.jar (org.codehaus.groovy:groovy-templates:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-test-3.0.17.jar (org.codehaus.groovy:groovy-test:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-test-junit5-3.0.17.jar (org.codehaus.groovy:groovy-test-junit5:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-xml-3.0.17.jar (org.codehaus.groovy:groovy-xml:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-3.0.17.jar (org.codehaus.groovy:groovy:3.0.17) with InstrumentationAnalysisTransform
+Transforming woodstox-core-6.5.1.jar (com.fasterxml.woodstox:woodstox-core:6.5.1) with InstrumentationAnalysisTransform
+Transforming stax2-api-4.2.1.jar (org.codehaus.woodstox:stax2-api:4.2.1) with InstrumentationAnalysisTransform
+Transforming ant-junit-1.10.12.jar (org.apache.ant:ant-junit:1.10.12) with InstrumentationAnalysisTransform
+Transforming ant-1.10.12.jar (org.apache.ant:ant:1.10.12) with InstrumentationAnalysisTransform
+Transforming ant-launcher-1.10.12.jar (org.apache.ant:ant-launcher:1.10.12) with InstrumentationAnalysisTransform
+Transforming ant-antlr-1.10.12.jar (org.apache.ant:ant-antlr:1.10.12) with InstrumentationAnalysisTransform
+Transforming picocli-4.6.3.jar (info.picocli:picocli:4.6.3) with InstrumentationAnalysisTransform
+Transforming qdox-1.12.1.jar (com.thoughtworks.qdox:qdox:1.12.1) with InstrumentationAnalysisTransform
+Transforming javaparser-core-3.25.1.jar (com.github.javaparser:javaparser-core:3.25.1) with InstrumentationAnalysisTransform
+Transforming jline-2.14.6.jar (jline:jline:2.14.6) with InstrumentationAnalysisTransform
+Transforming junit-platform-launcher-1.9.2.jar (org.junit.platform:junit-platform-launcher:1.9.2) with InstrumentationAnalysisTransform
+Transforming junit-platform-engine-1.9.2.jar (org.junit.platform:junit-platform-engine:1.9.2) with InstrumentationAnalysisTransform
+Transforming junit-platform-commons-1.9.2.jar (org.junit.platform:junit-platform-commons:1.9.2) with InstrumentationAnalysisTransform
+Transforming junit-jupiter-engine-5.9.2.jar (org.junit.jupiter:junit-jupiter-engine:5.9.2) with InstrumentationAnalysisTransform
+Transforming junit-jupiter-api-5.9.2.jar (org.junit.jupiter:junit-jupiter-api:5.9.2) with InstrumentationAnalysisTransform
+Transforming opentest4j-1.2.0.jar (org.opentest4j:opentest4j:1.2.0) with InstrumentationAnalysisTransform
+Transforming jcommander-1.78.jar (com.beust:jcommander:1.78) with InstrumentationAnalysisTransform
+Transforming jquery-3.5.1.jar (org.webjars:jquery:3.5.1) with InstrumentationAnalysisTransform
+Transforming userdev-7.0.126.jar (net.neoforged.gradle:userdev:7.0.126) with InstrumentationAnalysisTransform
+Transforming userdev-7.0.126.jar (net.neoforged.gradle:userdev:7.0.126) with MergeInstrumentationAnalysisTransform
+Transforming neoform-7.0.126.jar (net.neoforged.gradle:neoform:7.0.126) with InstrumentationAnalysisTransform
+Transforming neoform-7.0.126.jar (net.neoforged.gradle:neoform:7.0.126) with MergeInstrumentationAnalysisTransform
+Transforming common-7.0.126.jar (net.neoforged.gradle:common:7.0.126) with InstrumentationAnalysisTransform
+Transforming userdev-7.0.126.jar (net.neoforged.gradle:userdev:7.0.126) with ExternalDependencyInstrumentingArtifactTransform
+Transforming common-7.0.126.jar (net.neoforged.gradle:common:7.0.126) with MergeInstrumentationAnalysisTransform
+Transforming neoform-7.0.126.jar (net.neoforged.gradle:neoform:7.0.126) with ExternalDependencyInstrumentingArtifactTransform
+Transforming dsl-userdev-7.0.126.jar (net.neoforged.gradle:dsl-userdev:7.0.126) with InstrumentationAnalysisTransform
+Transforming dsl-userdev-7.0.126.jar (net.neoforged.gradle:dsl-userdev:7.0.126) with MergeInstrumentationAnalysisTransform
+Transforming common-7.0.126.jar (net.neoforged.gradle:common:7.0.126) with ExternalDependencyInstrumentingArtifactTransform
+Transforming dsl-neoform-7.0.126.jar (net.neoforged.gradle:dsl-neoform:7.0.126) with InstrumentationAnalysisTransform
+Transforming dsl-neoform-7.0.126.jar (net.neoforged.gradle:dsl-neoform:7.0.126) with MergeInstrumentationAnalysisTransform
+Transforming dsl-userdev-7.0.126.jar (net.neoforged.gradle:dsl-userdev:7.0.126) with ExternalDependencyInstrumentingArtifactTransform
+Transforming utils-7.0.126.jar (net.neoforged.gradle:utils:7.0.126) with InstrumentationAnalysisTransform
+Transforming utils-7.0.126.jar (net.neoforged.gradle:utils:7.0.126) with MergeInstrumentationAnalysisTransform
+Transforming dsl-neoform-7.0.126.jar (net.neoforged.gradle:dsl-neoform:7.0.126) with ExternalDependencyInstrumentingArtifactTransform
+Transforming dsl-common-7.0.126.jar (net.neoforged.gradle:dsl-common:7.0.126) with InstrumentationAnalysisTransform
+Transforming dsl-common-7.0.126.jar (net.neoforged.gradle:dsl-common:7.0.126) with MergeInstrumentationAnalysisTransform
+Transforming utils-7.0.126.jar (net.neoforged.gradle:utils:7.0.126) with ExternalDependencyInstrumentingArtifactTransform
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with InstrumentationAnalysisTransform
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with MergeInstrumentationAnalysisTransform
+Transforming dsl-common-7.0.126.jar (net.neoforged.gradle:dsl-common:7.0.126) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovydslimprover-1.0.15-base.jar (net.neoforged:groovydslimprover:1.0.15) with InstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15-base.jar (net.neoforged:groovydslimprover:1.0.15) with MergeInstrumentationAnalysisTransform
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovydslimprover-1.0.15-runtime.jar (net.neoforged:groovydslimprover:1.0.15) with InstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15-runtime.jar (net.neoforged:groovydslimprover:1.0.15) with MergeInstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15-base.jar (net.neoforged:groovydslimprover:1.0.15) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovydslimprover-1.0.15.jar (net.neoforged:groovydslimprover:1.0.15) with InstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15.jar (net.neoforged:groovydslimprover:1.0.15) with MergeInstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15-runtime.jar (net.neoforged:groovydslimprover:1.0.15) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-io-2.11.0.jar (commons-io:commons-io:2.11.0) with InstrumentationAnalysisTransform
+Transforming commons-io-2.11.0.jar (commons-io:commons-io:2.11.0) with MergeInstrumentationAnalysisTransform
+Transforming groovydslimprover-1.0.15.jar (net.neoforged:groovydslimprover:1.0.15) with ExternalDependencyInstrumentingArtifactTransform
+Transforming JarJarSelector-0.4.1.jar (net.neoforged:JarJarSelector:0.4.1) with InstrumentationAnalysisTransform
+Transforming JarJarSelector-0.4.1.jar (net.neoforged:JarJarSelector:0.4.1) with MergeInstrumentationAnalysisTransform
+Transforming commons-io-2.11.0.jar (commons-io:commons-io:2.11.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming JarJarMetadata-0.4.1.jar (net.neoforged:JarJarMetadata:0.4.1) with InstrumentationAnalysisTransform
+Transforming JarJarMetadata-0.4.1.jar (net.neoforged:JarJarMetadata:0.4.1) with MergeInstrumentationAnalysisTransform
+Transforming JarJarSelector-0.4.1.jar (net.neoforged:JarJarSelector:0.4.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming gradle-idea-ext-1.1.6.jar (gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:1.1.6) with InstrumentationAnalysisTransform
+Transforming gradle-idea-ext-1.1.6.jar (gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:1.1.6) with MergeInstrumentationAnalysisTransform
+Transforming JarJarMetadata-0.4.1.jar (net.neoforged:JarJarMetadata:0.4.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming gson-2.9.0.jar (com.google.code.gson:gson:2.9.0) with InstrumentationAnalysisTransform
+Transforming gson-2.9.0.jar (com.google.code.gson:gson:2.9.0) with MergeInstrumentationAnalysisTransform
+Transforming gradle-idea-ext-1.1.6.jar (gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:1.1.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming guava-31.1-jre.jar (com.google.guava:guava:31.1-jre) with InstrumentationAnalysisTransform
+Transforming guava-31.1-jre.jar (com.google.guava:guava:31.1-jre) with MergeInstrumentationAnalysisTransform
+Transforming gson-2.9.0.jar (com.google.code.gson:gson:2.9.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming fastcsv-2.2.0.jar (de.siegmar:fastcsv:2.2.0) with InstrumentationAnalysisTransform
+Transforming fastcsv-2.2.0.jar (de.siegmar:fastcsv:2.2.0) with MergeInstrumentationAnalysisTransform
+Transforming guava-31.1-jre.jar (com.google.guava:guava:31.1-jre) with ExternalDependencyInstrumentingArtifactTransform
+Transforming unsafe-0.2.0.jar (net.minecraftforge:unsafe:0.2.0) with InstrumentationAnalysisTransform
+Transforming fastcsv-2.2.0.jar (de.siegmar:fastcsv:2.2.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming unsafe-0.2.0.jar (net.minecraftforge:unsafe:0.2.0) with MergeInstrumentationAnalysisTransform
+Transforming maven-artifact-3.8.5.jar (org.apache.maven:maven-artifact:3.8.5) with InstrumentationAnalysisTransform
+Transforming maven-artifact-3.8.5.jar (org.apache.maven:maven-artifact:3.8.5) with MergeInstrumentationAnalysisTransform
+Transforming unsafe-0.2.0.jar (net.minecraftforge:unsafe:0.2.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming ivy-2.5.1.jar (org.apache.ivy:ivy:2.5.1) with InstrumentationAnalysisTransform
+Transforming ivy-2.5.1.jar (org.apache.ivy:ivy:2.5.1) with MergeInstrumentationAnalysisTransform
+Transforming maven-artifact-3.8.5.jar (org.apache.maven:maven-artifact:3.8.5) with ExternalDependencyInstrumentingArtifactTransform
+Transforming httpclient-4.5.13.jar (org.apache.httpcomponents:httpclient:4.5.13) with InstrumentationAnalysisTransform
+Transforming httpclient-4.5.13.jar (org.apache.httpcomponents:httpclient:4.5.13) with MergeInstrumentationAnalysisTransform
+Transforming ivy-2.5.1.jar (org.apache.ivy:ivy:2.5.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming srgutils-0.4.13.jar (net.minecraftforge:srgutils:0.4.13) with InstrumentationAnalysisTransform
+Transforming httpclient-4.5.13.jar (org.apache.httpcomponents:httpclient:4.5.13) with ExternalDependencyInstrumentingArtifactTransform
+Transforming srgutils-0.4.13.jar (net.minecraftforge:srgutils:0.4.13) with MergeInstrumentationAnalysisTransform
+Transforming DiffPatch-1.5.0.29.jar (codechicken:DiffPatch:1.5.0.29) with InstrumentationAnalysisTransform
+Transforming DiffPatch-1.5.0.29.jar (codechicken:DiffPatch:1.5.0.29) with MergeInstrumentationAnalysisTransform
+Transforming srgutils-0.4.13.jar (net.minecraftforge:srgutils:0.4.13) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-codec-1.15.jar (commons-codec:commons-codec:1.15) with InstrumentationAnalysisTransform
+Transforming commons-codec-1.15.jar (commons-codec:commons-codec:1.15) with MergeInstrumentationAnalysisTransform
+Transforming DiffPatch-1.5.0.29.jar (codechicken:DiffPatch:1.5.0.29) with ExternalDependencyInstrumentingArtifactTransform
+Transforming EclipseLaunchConfigs-0.1.3.jar (net.neoforged:EclipseLaunchConfigs:0.1.3) with InstrumentationAnalysisTransform
+Transforming commons-codec-1.15.jar (commons-codec:commons-codec:1.15) with ExternalDependencyInstrumentingArtifactTransform
+Transforming EclipseLaunchConfigs-0.1.3.jar (net.neoforged:EclipseLaunchConfigs:0.1.3) with MergeInstrumentationAnalysisTransform
+Transforming failureaccess-1.0.1.jar (com.google.guava:failureaccess:1.0.1) with InstrumentationAnalysisTransform
+Transforming failureaccess-1.0.1.jar (com.google.guava:failureaccess:1.0.1) with MergeInstrumentationAnalysisTransform
+Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava) with InstrumentationAnalysisTransform
+Transforming EclipseLaunchConfigs-0.1.3.jar (net.neoforged:EclipseLaunchConfigs:0.1.3) with ExternalDependencyInstrumentingArtifactTransform
+Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava) with MergeInstrumentationAnalysisTransform
+Transforming failureaccess-1.0.1.jar (com.google.guava:failureaccess:1.0.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jsr305-3.0.2.jar (com.google.code.findbugs:jsr305:3.0.2) with InstrumentationAnalysisTransform
+Transforming jsr305-3.0.2.jar (com.google.code.findbugs:jsr305:3.0.2) with MergeInstrumentationAnalysisTransform
+Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava) with ExternalDependencyInstrumentingArtifactTransform
+Transforming checker-qual-3.12.0.jar (org.checkerframework:checker-qual:3.12.0) with InstrumentationAnalysisTransform
+Transforming checker-qual-3.12.0.jar (org.checkerframework:checker-qual:3.12.0) with MergeInstrumentationAnalysisTransform
+Transforming jsr305-3.0.2.jar (com.google.code.findbugs:jsr305:3.0.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming error_prone_annotations-2.11.0.jar (com.google.errorprone:error_prone_annotations:2.11.0) with InstrumentationAnalysisTransform
+Transforming error_prone_annotations-2.11.0.jar (com.google.errorprone:error_prone_annotations:2.11.0) with MergeInstrumentationAnalysisTransform
+Transforming checker-qual-3.12.0.jar (org.checkerframework:checker-qual:3.12.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming j2objc-annotations-1.3.jar (com.google.j2objc:j2objc-annotations:1.3) with InstrumentationAnalysisTransform
+Transforming j2objc-annotations-1.3.jar (com.google.j2objc:j2objc-annotations:1.3) with MergeInstrumentationAnalysisTransform
+Transforming error_prone_annotations-2.11.0.jar (com.google.errorprone:error_prone_annotations:2.11.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming plexus-utils-3.3.0.jar (org.codehaus.plexus:plexus-utils:3.3.0) with InstrumentationAnalysisTransform
+Transforming plexus-utils-3.3.0.jar (org.codehaus.plexus:plexus-utils:3.3.0) with MergeInstrumentationAnalysisTransform
+Transforming j2objc-annotations-1.3.jar (com.google.j2objc:j2objc-annotations:1.3) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-lang3-3.9.jar (org.apache.commons:commons-lang3:3.9) with InstrumentationAnalysisTransform
+Transforming commons-lang3-3.9.jar (org.apache.commons:commons-lang3:3.9) with MergeInstrumentationAnalysisTransform
+Transforming plexus-utils-3.3.0.jar (org.codehaus.plexus:plexus-utils:3.3.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming httpcore-4.4.13.jar (org.apache.httpcomponents:httpcore:4.4.13) with InstrumentationAnalysisTransform
+Transforming commons-lang3-3.9.jar (org.apache.commons:commons-lang3:3.9) with ExternalDependencyInstrumentingArtifactTransform
+Transforming httpcore-4.4.13.jar (org.apache.httpcomponents:httpcore:4.4.13) with MergeInstrumentationAnalysisTransform
+Transforming commons-logging-1.2.jar (commons-logging:commons-logging:1.2) with InstrumentationAnalysisTransform
+Transforming commons-logging-1.2.jar (commons-logging:commons-logging:1.2) with MergeInstrumentationAnalysisTransform
+Transforming httpcore-4.4.13.jar (org.apache.httpcomponents:httpcore:4.4.13) with ExternalDependencyInstrumentingArtifactTransform
+Transforming Quack-0.4.7.72.jar (net.covers1624:Quack:0.4.7.72) with InstrumentationAnalysisTransform
+Transforming Quack-0.4.7.72.jar (net.covers1624:Quack:0.4.7.72) with MergeInstrumentationAnalysisTransform
+Transforming commons-logging-1.2.jar (commons-logging:commons-logging:1.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming fastutil-8.3.1.jar (it.unimi.dsi:fastutil:8.3.1) with InstrumentationAnalysisTransform
+Transforming Quack-0.4.7.72.jar (net.covers1624:Quack:0.4.7.72) with ExternalDependencyInstrumentingArtifactTransform
+Transforming fastutil-8.3.1.jar (it.unimi.dsi:fastutil:8.3.1) with MergeInstrumentationAnalysisTransform
+Transforming commons-compress-1.18.jar (org.apache.commons:commons-compress:1.18) with InstrumentationAnalysisTransform
+Transforming fastutil-8.3.1.jar (it.unimi.dsi:fastutil:8.3.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-compress-1.18.jar (org.apache.commons:commons-compress:1.18) with MergeInstrumentationAnalysisTransform
+Transforming xz-1.8.jar (org.tukaani:xz:1.8) with InstrumentationAnalysisTransform
+Transforming commons-compress-1.18.jar (org.apache.commons:commons-compress:1.18) with ExternalDependencyInstrumentingArtifactTransform
+Transforming xz-1.8.jar (org.tukaani:xz:1.8) with MergeInstrumentationAnalysisTransform
+Transforming jopt-simple-5.0.4.jar (net.sf.jopt-simple:jopt-simple:5.0.4) with InstrumentationAnalysisTransform
+Transforming jopt-simple-5.0.4.jar (net.sf.jopt-simple:jopt-simple:5.0.4) with MergeInstrumentationAnalysisTransform
+Transforming xz-1.8.jar (org.tukaani:xz:1.8) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jackson-databind-2.15.2.jar (com.fasterxml.jackson.core:jackson-databind:2.15.2) with InstrumentationAnalysisTransform
+Transforming jackson-databind-2.15.2.jar (com.fasterxml.jackson.core:jackson-databind:2.15.2) with MergeInstrumentationAnalysisTransform
+Transforming jopt-simple-5.0.4.jar (net.sf.jopt-simple:jopt-simple:5.0.4) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jackson-core-2.15.2.jar (com.fasterxml.jackson.core:jackson-core:2.15.2) with InstrumentationAnalysisTransform
+Transforming jackson-core-2.15.2.jar (com.fasterxml.jackson.core:jackson-core:2.15.2) with MergeInstrumentationAnalysisTransform
+Transforming jackson-databind-2.15.2.jar (com.fasterxml.jackson.core:jackson-databind:2.15.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jackson-annotations-2.15.2.jar (com.fasterxml.jackson.core:jackson-annotations:2.15.2) with InstrumentationAnalysisTransform
+Transforming jackson-annotations-2.15.2.jar (com.fasterxml.jackson.core:jackson-annotations:2.15.2) with MergeInstrumentationAnalysisTransform
+Transforming jackson-core-2.15.2.jar (com.fasterxml.jackson.core:jackson-core:2.15.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jackson-dataformat-xml-2.15.2.jar (com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2) with InstrumentationAnalysisTransform
+Transforming jackson-dataformat-xml-2.15.2.jar (com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2) with MergeInstrumentationAnalysisTransform
+Transforming jackson-annotations-2.15.2.jar (com.fasterxml.jackson.core:jackson-annotations:2.15.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming noexception-1.7.1.jar (com.machinezoo.noexception:noexception:1.7.1) with InstrumentationAnalysisTransform
+Transforming noexception-1.7.1.jar (com.machinezoo.noexception:noexception:1.7.1) with MergeInstrumentationAnalysisTransform
+Transforming jackson-dataformat-xml-2.15.2.jar (com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-testng-3.0.17.jar (org.codehaus.groovy:groovy-testng:3.0.17) with InstrumentationAnalysisTransform
+Transforming noexception-1.7.1.jar (com.machinezoo.noexception:noexception:1.7.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-testng-3.0.17.jar (org.codehaus.groovy:groovy-testng:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming testng-7.5.jar (org.testng:testng:7.5) with InstrumentationAnalysisTransform
+Transforming testng-7.5.jar (org.testng:testng:7.5) with MergeInstrumentationAnalysisTransform
+Transforming slf4j-api-1.7.32.jar (org.slf4j:slf4j-api:1.7.32) with InstrumentationAnalysisTransform
+Transforming groovy-testng-3.0.17.jar (org.codehaus.groovy:groovy-testng:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming slf4j-api-1.7.32.jar (org.slf4j:slf4j-api:1.7.32) with MergeInstrumentationAnalysisTransform
+Transforming testng-7.5.jar (org.testng:testng:7.5) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-ant-3.0.17.jar (org.codehaus.groovy:groovy-ant:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-ant-3.0.17.jar (org.codehaus.groovy:groovy-ant:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming slf4j-api-1.7.32.jar (org.slf4j:slf4j-api:1.7.32) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-astbuilder-3.0.17.jar (org.codehaus.groovy:groovy-astbuilder:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-astbuilder-3.0.17.jar (org.codehaus.groovy:groovy-astbuilder:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-ant-3.0.17.jar (org.codehaus.groovy:groovy-ant:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-cli-picocli-3.0.17.jar (org.codehaus.groovy:groovy-cli-picocli:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-cli-picocli-3.0.17.jar (org.codehaus.groovy:groovy-cli-picocli:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-astbuilder-3.0.17.jar (org.codehaus.groovy:groovy-astbuilder:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-groovysh-3.0.17.jar (org.codehaus.groovy:groovy-groovysh:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-groovysh-3.0.17.jar (org.codehaus.groovy:groovy-groovysh:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-cli-picocli-3.0.17.jar (org.codehaus.groovy:groovy-cli-picocli:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-console-3.0.17.jar (org.codehaus.groovy:groovy-console:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-console-3.0.17.jar (org.codehaus.groovy:groovy-console:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-groovysh-3.0.17.jar (org.codehaus.groovy:groovy-groovysh:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-datetime-3.0.17.jar (org.codehaus.groovy:groovy-datetime:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-console-3.0.17.jar (org.codehaus.groovy:groovy-console:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-datetime-3.0.17.jar (org.codehaus.groovy:groovy-datetime:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-groovydoc-3.0.17.jar (org.codehaus.groovy:groovy-groovydoc:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-datetime-3.0.17.jar (org.codehaus.groovy:groovy-datetime:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-groovydoc-3.0.17.jar (org.codehaus.groovy:groovy-groovydoc:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-docgenerator-3.0.17.jar (org.codehaus.groovy:groovy-docgenerator:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-docgenerator-3.0.17.jar (org.codehaus.groovy:groovy-docgenerator:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-groovydoc-3.0.17.jar (org.codehaus.groovy:groovy-groovydoc:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-jmx-3.0.17.jar (org.codehaus.groovy:groovy-jmx:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-docgenerator-3.0.17.jar (org.codehaus.groovy:groovy-docgenerator:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-jmx-3.0.17.jar (org.codehaus.groovy:groovy-jmx:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-json-3.0.17.jar (org.codehaus.groovy:groovy-json:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-json-3.0.17.jar (org.codehaus.groovy:groovy-json:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-jsr223-3.0.17.jar (org.codehaus.groovy:groovy-jsr223:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-jmx-3.0.17.jar (org.codehaus.groovy:groovy-jmx:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-jsr223-3.0.17.jar (org.codehaus.groovy:groovy-jsr223:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-json-3.0.17.jar (org.codehaus.groovy:groovy-json:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-macro-3.0.17.jar (org.codehaus.groovy:groovy-macro:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-macro-3.0.17.jar (org.codehaus.groovy:groovy-macro:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-jsr223-3.0.17.jar (org.codehaus.groovy:groovy-jsr223:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-nio-3.0.17.jar (org.codehaus.groovy:groovy-nio:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-nio-3.0.17.jar (org.codehaus.groovy:groovy-nio:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-macro-3.0.17.jar (org.codehaus.groovy:groovy-macro:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-servlet-3.0.17.jar (org.codehaus.groovy:groovy-servlet:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-servlet-3.0.17.jar (org.codehaus.groovy:groovy-servlet:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-nio-3.0.17.jar (org.codehaus.groovy:groovy-nio:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-sql-3.0.17.jar (org.codehaus.groovy:groovy-sql:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-sql-3.0.17.jar (org.codehaus.groovy:groovy-sql:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-servlet-3.0.17.jar (org.codehaus.groovy:groovy-servlet:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-swing-3.0.17.jar (org.codehaus.groovy:groovy-swing:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-sql-3.0.17.jar (org.codehaus.groovy:groovy-sql:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-swing-3.0.17.jar (org.codehaus.groovy:groovy-swing:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-templates-3.0.17.jar (org.codehaus.groovy:groovy-templates:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-templates-3.0.17.jar (org.codehaus.groovy:groovy-templates:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-swing-3.0.17.jar (org.codehaus.groovy:groovy-swing:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-test-3.0.17.jar (org.codehaus.groovy:groovy-test:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-test-3.0.17.jar (org.codehaus.groovy:groovy-test:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-templates-3.0.17.jar (org.codehaus.groovy:groovy-templates:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-test-junit5-3.0.17.jar (org.codehaus.groovy:groovy-test-junit5:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-test-3.0.17.jar (org.codehaus.groovy:groovy-test:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-test-junit5-3.0.17.jar (org.codehaus.groovy:groovy-test-junit5:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-xml-3.0.17.jar (org.codehaus.groovy:groovy-xml:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-xml-3.0.17.jar (org.codehaus.groovy:groovy-xml:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-test-junit5-3.0.17.jar (org.codehaus.groovy:groovy-test-junit5:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming groovy-3.0.17.jar (org.codehaus.groovy:groovy:3.0.17) with InstrumentationAnalysisTransform
+Transforming groovy-3.0.17.jar (org.codehaus.groovy:groovy:3.0.17) with MergeInstrumentationAnalysisTransform
+Transforming groovy-xml-3.0.17.jar (org.codehaus.groovy:groovy-xml:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming woodstox-core-6.5.1.jar (com.fasterxml.woodstox:woodstox-core:6.5.1) with InstrumentationAnalysisTransform
+Transforming woodstox-core-6.5.1.jar (com.fasterxml.woodstox:woodstox-core:6.5.1) with MergeInstrumentationAnalysisTransform
+Transforming groovy-3.0.17.jar (org.codehaus.groovy:groovy:3.0.17) with ExternalDependencyInstrumentingArtifactTransform
+Transforming stax2-api-4.2.1.jar (org.codehaus.woodstox:stax2-api:4.2.1) with InstrumentationAnalysisTransform
+Transforming woodstox-core-6.5.1.jar (com.fasterxml.woodstox:woodstox-core:6.5.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming stax2-api-4.2.1.jar (org.codehaus.woodstox:stax2-api:4.2.1) with MergeInstrumentationAnalysisTransform
+Transforming ant-junit-1.10.12.jar (org.apache.ant:ant-junit:1.10.12) with InstrumentationAnalysisTransform
+Transforming ant-junit-1.10.12.jar (org.apache.ant:ant-junit:1.10.12) with MergeInstrumentationAnalysisTransform
+Transforming ant-1.10.12.jar (org.apache.ant:ant:1.10.12) with InstrumentationAnalysisTransform
+Transforming stax2-api-4.2.1.jar (org.codehaus.woodstox:stax2-api:4.2.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming ant-1.10.12.jar (org.apache.ant:ant:1.10.12) with MergeInstrumentationAnalysisTransform
+Transforming ant-junit-1.10.12.jar (org.apache.ant:ant-junit:1.10.12) with ExternalDependencyInstrumentingArtifactTransform
+Transforming ant-launcher-1.10.12.jar (org.apache.ant:ant-launcher:1.10.12) with InstrumentationAnalysisTransform
+Transforming ant-launcher-1.10.12.jar (org.apache.ant:ant-launcher:1.10.12) with MergeInstrumentationAnalysisTransform
+Transforming ant-1.10.12.jar (org.apache.ant:ant:1.10.12) with ExternalDependencyInstrumentingArtifactTransform
+Transforming ant-antlr-1.10.12.jar (org.apache.ant:ant-antlr:1.10.12) with InstrumentationAnalysisTransform
+Transforming ant-antlr-1.10.12.jar (org.apache.ant:ant-antlr:1.10.12) with MergeInstrumentationAnalysisTransform
+Transforming ant-launcher-1.10.12.jar (org.apache.ant:ant-launcher:1.10.12) with ExternalDependencyInstrumentingArtifactTransform
+Transforming picocli-4.6.3.jar (info.picocli:picocli:4.6.3) with InstrumentationAnalysisTransform
+Transforming picocli-4.6.3.jar (info.picocli:picocli:4.6.3) with MergeInstrumentationAnalysisTransform
+Transforming ant-antlr-1.10.12.jar (org.apache.ant:ant-antlr:1.10.12) with ExternalDependencyInstrumentingArtifactTransform
+Transforming qdox-1.12.1.jar (com.thoughtworks.qdox:qdox:1.12.1) with InstrumentationAnalysisTransform
+Transforming picocli-4.6.3.jar (info.picocli:picocli:4.6.3) with ExternalDependencyInstrumentingArtifactTransform
+Transforming qdox-1.12.1.jar (com.thoughtworks.qdox:qdox:1.12.1) with MergeInstrumentationAnalysisTransform
+Transforming javaparser-core-3.25.1.jar (com.github.javaparser:javaparser-core:3.25.1) with InstrumentationAnalysisTransform
+Transforming javaparser-core-3.25.1.jar (com.github.javaparser:javaparser-core:3.25.1) with MergeInstrumentationAnalysisTransform
+Transforming qdox-1.12.1.jar (com.thoughtworks.qdox:qdox:1.12.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jline-2.14.6.jar (jline:jline:2.14.6) with InstrumentationAnalysisTransform
+Transforming jline-2.14.6.jar (jline:jline:2.14.6) with MergeInstrumentationAnalysisTransform
+cmd : e: file:///C:/Users/jamie/OneDrive/Documents/Minecraft%20Custom%20Mods/usf-adminmod/build.gradle.kts:21:1: 
+Unresolved reference: neoForge
+At line:1 char:1
++ cmd /c ".\gradlew.bat clean build --stacktrace --info" 2>&1 | Out-Fil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (e: file:///C:/U...rence: neoForge:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\jamie\OneDrive\Documents\Minecraft Custom Mods\usf-adminmod\build.gradle.kts' line: 21
+
+* What went wrong:
+Script compilation error:
+
+  Line 21: neoForge {
+           ^ Unresolved reference: neoForge
+
+1 error
+
+* Try:
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+ScriptCompilationException(scriptCompilationErrors=[ScriptCompilationError(message=Unresolved reference: neoForge, 
+location=C:\Users\jamie\.gradle\.tmp\gradle-kotlin-dsl-13470569638333346089.tmp\build.gradle.kts (21:1))])
+	at org.gradle.kotlin.dsl.support.KotlinCompilerKt.compileKotlinScriptModuleTo(KotlinCompiler.kt:190)
+	at org.gradle.kotlin.dsl.support.KotlinCompilerKt.compileKotlinScriptToDirectory(KotlinCompiler.kt:148)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler$compileScript$1.invoke(ResidualProgramCompiler.kt:712)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler$compileScript$1.invoke(ResidualProgramCompiler.kt:711)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost$runCompileBuildOperation$1.call(Kotlin
+ScriptEvaluator.kt:179)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost$runCompileBuildOperation$1.call(Kotlin
+ScriptEvaluator.kt:176)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost.runCompileBuildOperation(KotlinScriptE
+valuator.kt:176)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1$1$1$1$1.invoke(Interpreter.
+kt:490)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1$1$1$1$1.invoke(Interpreter.
+kt:490)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler.compileScript-C5AE47M(ResidualProgramCompiler.kt:711)
+	at 
+org.gradle.kotlin.dsl.execution.ResidualProgramCompiler.compileScript-C5AE47M$default(ResidualProgramCompiler.kt:704)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler.emitStage2ProgramFor(ResidualProgramCompiler.kt:363)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1.invoke(Interpreter.kt:491)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1.invoke(Interpreter.kt:467)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$KotlinScriptCompilationAndInstrumentation.compile(Kotl
+inScriptEvaluator.kt:386)
+	at org.gradle.internal.scripts.BuildScriptCompilationAndInstrumentation.execute(BuildScriptCompilationAndInstrumentati
+on.java:96)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.NoInputChangesStep.execute(NoInputChangesStep.java:30)
+	at org.gradle.internal.execution.steps.NoInputChangesStep.execute(NoInputChangesStep.java:21)
+	at 
+org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:67)
+	at 
+org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.NeverUpToDateStep.execute(NeverUpToDateStep.java:34)
+	at org.gradle.internal.execution.steps.NeverUpToDateStep.execute(NeverUpToDateStep.java:22)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishe
+dStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishe
+dStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveNonIncrementalCachingStateStep.executeDelegate(ResolveNonIncrementalCach
+ingStateStep.java:50)
+	at 
+org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at 
+org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:106)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecu
+tionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecu
+tionStep.java:43)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedS
+tep.java:38)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.lambda$executeInTemporaryWorkspace$3(AssignImmutab
+leWorkspaceStep.java:209)
+	at org.gradle.internal.execution.workspace.impl.CacheBasedImmutableWorkspaceProvider$1.withTemporaryWorkspace(CacheBas
+edImmutableWorkspaceProvider.java:119)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.executeInTemporaryWorkspace(AssignImmutableWorkspa
+ceStep.java:199)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.lambda$execute$0(AssignImmutableWorkspaceStep.java
+:121)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.execute(AssignImmutableWorkspaceStep.java:121)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.execute(AssignImmutableWorkspaceStep.java:90)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:38)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationF
+iringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep
+.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep
+.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at 
+org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost.cachedDirFor(KotlinScriptEvaluator.kt:270)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.compileSecondStageOf(Interpreter.kt:467)
+	at Program.loadSecondStageFor(Unknown Source)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.evaluateSecondStageOf(Interpreter.kt:431)
+	at Program.execute(Unknown Source)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.eval(Interpreter.kt:514)
+	at org.gradle.kotlin.dsl.execution.Interpreter.eval(Interpreter.kt:193)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator.evaluate(KotlinScriptEvaluator.kt:117)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPluginFactory$create$1.invoke(KotlinScriptPluginFactory.kt:51)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPluginFactory$create$1.invoke(KotlinScriptPluginFactory.kt:48)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPlugin.apply(KotlinScriptPlugin.kt:35)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.configuration.BuildOperationScriptPlugin.lambda$apply$0(BuildOperationScriptPlugin.java:65)
+	at org.gradle.internal.code.DefaultUserCodeApplicationContext.apply(DefaultUserCodeApplicationContext.java:43)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:65)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.lambda$applyToMutableState$1(DefaultPr
+ojectStateRegistry.java:407)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.fromMutableState(DefaultProjectStateRe
+gistry.java:425)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.applyToMutableState(DefaultProjectStat
+eRegistry.java:406)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:46)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:27)
+Transforming javaparser-core-3.25.1.jar (com.github.javaparser:javaparser-core:3.25.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming junit-platform-launcher-1.9.2.jar (org.junit.platform:junit-platform-launcher:1.9.2) with InstrumentationAnalysisTransform
+Transforming jline-2.14.6.jar (jline:jline:2.14.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming junit-platform-launcher-1.9.2.jar (org.junit.platform:junit-platform-launcher:1.9.2) with MergeInstrumentationAnalysisTransform
+Transforming junit-platform-engine-1.9.2.jar (org.junit.platform:junit-platform-engine:1.9.2) with InstrumentationAnalysisTransform
+Transforming junit-platform-engine-1.9.2.jar (org.junit.platform:junit-platform-engine:1.9.2) with MergeInstrumentationAnalysisTransform
+Transforming junit-platform-launcher-1.9.2.jar (org.junit.platform:junit-platform-launcher:1.9.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming junit-platform-commons-1.9.2.jar (org.junit.platform:junit-platform-commons:1.9.2) with InstrumentationAnalysisTransform
+Transforming junit-platform-engine-1.9.2.jar (org.junit.platform:junit-platform-engine:1.9.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming junit-platform-commons-1.9.2.jar (org.junit.platform:junit-platform-commons:1.9.2) with MergeInstrumentationAnalysisTransform
+Transforming junit-jupiter-engine-5.9.2.jar (org.junit.jupiter:junit-jupiter-engine:5.9.2) with InstrumentationAnalysisTransform
+Transforming junit-jupiter-engine-5.9.2.jar (org.junit.jupiter:junit-jupiter-engine:5.9.2) with MergeInstrumentationAnalysisTransform
+Transforming junit-platform-commons-1.9.2.jar (org.junit.platform:junit-platform-commons:1.9.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming junit-jupiter-api-5.9.2.jar (org.junit.jupiter:junit-jupiter-api:5.9.2) with InstrumentationAnalysisTransform
+Transforming junit-jupiter-api-5.9.2.jar (org.junit.jupiter:junit-jupiter-api:5.9.2) with MergeInstrumentationAnalysisTransform
+Transforming junit-jupiter-engine-5.9.2.jar (org.junit.jupiter:junit-jupiter-engine:5.9.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming opentest4j-1.2.0.jar (org.opentest4j:opentest4j:1.2.0) with InstrumentationAnalysisTransform
+Transforming junit-jupiter-api-5.9.2.jar (org.junit.jupiter:junit-jupiter-api:5.9.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming opentest4j-1.2.0.jar (org.opentest4j:opentest4j:1.2.0) with MergeInstrumentationAnalysisTransform
+Transforming jcommander-1.78.jar (com.beust:jcommander:1.78) with InstrumentationAnalysisTransform
+Transforming jcommander-1.78.jar (com.beust:jcommander:1.78) with MergeInstrumentationAnalysisTransform
+Transforming opentest4j-1.2.0.jar (org.opentest4j:opentest4j:1.2.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jquery-3.5.1.jar (org.webjars:jquery:3.5.1) with InstrumentationAnalysisTransform
+Transforming jquery-3.5.1.jar (org.webjars:jquery:3.5.1) with MergeInstrumentationAnalysisTransform
+Transforming jcommander-1.78.jar (com.beust:jcommander:1.78) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jquery-3.5.1.jar (org.webjars:jquery:3.5.1) with ExternalDependencyInstrumentingArtifactTransform
+Build was configured to prefer settings repositories over project repositories but repository 'NeoGradle Artifacts' was added by plugin class 'net.neoforged.gradle.common.CommonProjectPlugin'
+Build was configured to prefer settings repositories over project repositories but repository 'maven' was added by plugin class 'net.neoforged.gradle.common.CommonProjectPlugin'
+Build was configured to prefer settings repositories over project repositories but repository 'maven2' was added by plugin class 'net.neoforged.gradle.neoform.NeoFormProjectPlugin'
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage2) because:
+  Build cache is disabled
+w: Classpath entry points to a non-existent location: C:\Users\jamie\OneDrive\Documents\Minecraft Custom Mods\usf-adminmod\gradle-tmp\lib\gradle-installation-beacon-8.8.jar
+w: Classpath entry points to a non-existent location: C:\Users\jamie\OneDrive\Documents\Minecraft Custom Mods\usf-adminmod\gradle-tmp\lib\gradle-installation-beacon-8.8.jar
+	at 
+org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:35)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$EvaluateProject.lambda$run$0(LifecycleProjectEvaluator.j
+ava:109)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.lambda$applyToMutableState$1(DefaultPr
+ojectStateRegistry.java:407)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.lambda$fromMutableState$2(DefaultProje
+ctStateRegistry.java:430)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withReplacedLocks(DefaultWorkerLeaseService.java:360)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.fromMutableState(DefaultProjectStateRe
+gistry.java:430)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.applyToMutableState(DefaultProjectStat
+eRegistry.java:406)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$EvaluateProject.run(LifecycleProjectEvaluator.java:100)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:72)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:785)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:155)
+	at org.gradle.api.internal.project.ProjectLifecycleController.lambda$ensureSelfConfigured$2(ProjectLifecycleController
+.java:84)
+	at org.gradle.internal.model.StateTransitionController.lambda$doTransition$14(StateTransitionController.java:255)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:254)
+	at org.gradle.internal.model.StateTransitionController.lambda$maybeTransitionIfNotCurrentlyTransitioning$10(StateTrans
+itionController.java:199)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:34)
+	at org.gradle.internal.model.StateTransitionController.maybeTransitionIfNotCurrentlyTransitioning(StateTransitionContr
+oller.java:195)
+	at org.gradle.api.internal.project.ProjectLifecycleController.ensureSelfConfigured(ProjectLifecycleController.java:84)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.ensureConfigured(DefaultProjectStateRe
+gistry.java:381)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:34)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:48)
+	at org.gradle.configuration.DefaultProjectsPreparer.prepareProjects(DefaultProjectsPreparer.java:42)
+	at 
+org.gradle.configuration.BuildTreePreparingProjectsPreparer.prepareProjects(BuildTreePreparingProjectsPreparer.java:65)
+	at org.gradle.configuration.BuildOperationFiringProjectsPreparer$ConfigureBuild.run(BuildOperationFiringProjectsPrepar
+er.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.configuration.BuildOperationFiringProjectsPreparer.prepareProjects(BuildOperationFiringProjectsPreparer.
+java:40)
+	at org.gradle.initialization.VintageBuildModelController.lambda$prepareProjects$2(VintageBuildModelController.java:84)
+	at org.gradle.internal.model.StateTransitionController.lambda$doTransition$14(StateTransitionController.java:255)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:254)
+	at org.gradle.internal.model.StateTransitionController.lambda$transitionIfNotPreviously$11(StateTransitionController.j
+ava:213)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:34)
+	at org.gradle.internal.model.StateTransitionController.transitionIfNotPreviously(StateTransitionController.java:209)
+	at org.gradle.initialization.VintageBuildModelController.prepareProjects(VintageBuildModelController.java:84)
+	at org.gradle.initialization.VintageBuildModelController.prepareToScheduleTasks(VintageBuildModelController.java:71)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$prepareToScheduleTasks$6(DefaultBuildLifecycleCont
+roller.java:175)
+	at org.gradle.internal.model.StateTransitionController.lambda$doTransition$14(StateTransitionController.java:255)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:254)
+	at org.gradle.internal.model.StateTransitionController.lambda$maybeTransition$9(StateTransitionController.java:190)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:34)
+	at org.gradle.internal.model.StateTransitionController.maybeTransition(StateTransitionController.java:186)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.prepareToScheduleTasks(DefaultBuildLifecycleController.ja
+va:173)
+	at 
+org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.scheduleRequestedTasks(DefaultBuildTreeWorkPreparer.java:36)
+	at org.gradle.configurationcache.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeW
+orkController.kt:36)
+	at org.gradle.configurationcache.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeW
+orkController.kt:35)
+	at 
+org.gradle.composite.internal.DefaultIncludedBuildTaskGraph.withNewWorkGraph(DefaultIncludedBuildTaskGraph.java:112)
+	at org.gradle.configurationcache.VintageBuildTreeWorkController.scheduleAndRunRequestedTasks(VintageBuildTreeWorkContr
+oller.kt:35)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$scheduleAndRunTasks$1(DefaultBuildTreeLife
+cycleController.java:77)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$runBuild$4(DefaultBuildTreeLifecycleContro
+ller.java:120)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$6(StateTransitionController.java:169)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$7(StateTransitionController.java:169)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.transition(StateTransitionController.java:169)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.runBuild(DefaultBuildTreeLifecycleController.java
+:117)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleCont
+roller.java:77)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleCont
+roller.java:72)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.internal.buildtree.ProblemReportingBuildActionRunner.run(ProblemReportingBuildActionRunner.java:49)
+	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:65)
+	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.ja
+va:140)
+	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.ja
+va:41)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.lambda$execute$0(RootBuildLifecycleBuildActionExecut
+or.java:40)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:123)
+	at 
+org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.execute(RootBuildLifecycleBuildActionExecutor.java:40)
+	at org.gradle.internal.buildtree.InitDeprecationLoggingActionExecutor.execute(InitDeprecationLoggingActionExecutor.jav
+a:66)
+	at org.gradle.internal.buildtree.InitProblems.execute(InitProblems.java:36)
+	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecut
+or.java:71)
+	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:60)
+	at 
+org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.execute(BuildTreeLifecycleBuildActionExecutor.java:71)
+	at 
+org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:61)
+	at 
+org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at 
+org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor.execute(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.lambda$execute$0(RunAsWorkerThreadBuildActionExecutor
+.java:36)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.execute(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.tooling.internal.provider.continuous.ContinuousBuildActionExecutor.execute(ContinuousBuildActionExecutor
+.java:110)
+	at 
+org.gradle.tooling.internal.provider.SubscribableBuildActionExecutor.execute(SubscribableBuildActionExecutor.java:64)
+	at org.gradle.internal.session.DefaultBuildSessionContext.execute(DefaultBuildSessionContext.java:46)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter$ActionImpl.apply(BuildSessionLifecycl
+eBuildActionExecuter.java:92)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter$ActionImpl.apply(BuildSessionLifecycl
+eBuildActionExecuter.java:80)
+	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:71)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter.execute(BuildSessionLifecycleBuildAct
+ionExecuter.java:62)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter.execute(BuildSessionLifecycleBuildAct
+ionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecute
+r.java:64)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecute
+r.java:32)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExe
+cuter.java:51)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExe
+cuter.java:39)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:65)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.lambda$execute$0(ForwardClientInput.java:39)
+	at org.gradle.launcher.daemon.server.clientinput.ClientInputForwarder.forwardInput(ClientInputForwarder.java:88)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:64)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+
+
+BUILD FAILED in 1s
+Watched directory hierarchies: []
