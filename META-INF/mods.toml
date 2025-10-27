@@ -5,7 +5,7 @@ issueTrackerURL=""
 
 [[mods]]
 modId="usf_adminmod"
-version="${mod_version}"
+version="0.0.1"
 displayName="USF Admin Systems"
 authors="MeowNetStudios"
 description='''Admin tools for the Ultimate SMP Framework.'''
