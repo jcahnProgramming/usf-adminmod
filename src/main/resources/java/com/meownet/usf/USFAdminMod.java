@@ -11,8 +11,9 @@ public final class USFAdminMod {
 
     public USFAdminMod() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
-        modBus.addListener(this::onCommonSetup);
-        Registries.init(modBus); // keep or remove if you haven't created it yet
+        ClientInit.register(modBus);      // keybind registration (client-side event)
+        Registries.init(modBus);          // keep placeholder if you have it
+        Commands.register();              // server command listener
     }
 
     private void onCommonSetup(final FMLCommonSetupEvent event) { }
