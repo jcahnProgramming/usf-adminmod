@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.neoforged.gradle.userdev' version '7.0.192'
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.neoforged.net/releases' }
+    maven { url 'https://maven.neoforged.net/snapshots' }
+}
+
+neoForge {
+    version = "21.1.213"   // set to the exact NeoForge you’re targeting
+    runs {
+        client { client(); workingDirectory = file("run/client") }
+        server { server(); workingDirectory = file("run/server") }
+    }
+}
+
+tasks.withType(Jar).configureEach {
+    from("LICENSE") { into(""); rename { "LICENSE_${project.name}" } }
+}
+
+publishing {
+    publications { mavenJava(MavenPublication) { from components.java } }
+    repositories { /* add when you need to publish */ }
+}
